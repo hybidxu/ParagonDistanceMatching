@@ -168,9 +168,6 @@ void UParagonAnimInstance::NativeUpdateAnimation(float DeltaTimeX)
 
 void UParagonAnimInstance::UpdateDistanceMatching(float DeltaTimeX)
 {
-	//Very Important Line
-	Super::NativeUpdateAnimation(DeltaTimeX);
-
 	APawn* Pawn = TryGetPawnOwner();
 	if (!Pawn)
 		return;
